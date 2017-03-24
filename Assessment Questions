@@ -1,0 +1,37 @@
+Assessment
+1.	If you chose to use a tool or language other than the recommended, briefly explain why.
+Python is used because I am familiar with it.
+2.	How did you go about locating the elements for your tests?
+Used the following selectors
+
+driver.find_element_by_link_text
+
+driver.find_element_by_css_selector
+
+driver.find_element_by_id
+
+driver.find_element_by_xpath
+
+
+3.	If your test was running successfully on a regular basis, then suddenly began to fail, how would you find and correct the problem?
+The issue might be related to HTML, JS changes. Therefore, element selectors will be updated based on the code changes.
+4.	What is one additional validation step that you would add to the test, if any?
+Address and Order total verification steps will be added before checking out.
+5.	Did you spot any bugs within the application while creating the test? If so, report it here just as you would report it to the engineer responsible for fixing it
+Yes. There were some issue related to layout and functionality of the page.
+Issue 1. Shipt Logo is overlapped with the search field
+Steps to Reproduce
+1.	Login to Shipt.com
+2.	Enter a search item in the search field
+3.	Notice that Shipt logo is overlapped with the search field
+Issue 2. Many console errors are seen on the page, such as POST and GET related error, JS related error.
+Steps to Reproduce
+1.	Go to Shipt.com
+2.	Enter a search item in the search field
+3.	Scroll up/ down on the page to choose products
+4.	Notice that many console errors are seen on the page.
+Issue 3. The page cannot be scroll up and down, and stopped responding.
+Steps to Reproduce
+1.	Go to Shipt.com
+2.	Choose the products on the page and scroll up to the top of the page
+3.	Notice that the page is not responding
